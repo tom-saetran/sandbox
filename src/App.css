@@ -7,3 +7,18 @@ html {
     width: 0; /* Remove scrollbar space */
     background: transparent; /* Optional: just make scrollbar invisible */
 }
+
+.text-dimgray,
+.text-dimgrey {
+    color: dimgray !important;
+}
+
+.text-warm {
+    color: khaki !important;
+}
+
+.no-shadow,
+.no-shadow .btn-check:focus + .btn,
+.btn:focus {
+    box-shadow: none !important;
+}

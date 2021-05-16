@@ -1,34 +1,44 @@
 import React from "react"
 import { withRouter } from "react-router"
-import NavDropdown from "react-bootstrap/NavDropdown"
 import Dropdown from "react-bootstrap/Dropdown"
 import Navbar from "react-bootstrap/Navbar"
 import * as Router from "react-router-dom"
+import * as Icon from "react-bootstrap-icons"
 
 class NavBar extends React.Component {
     render() {
         return (
             <Navbar className="d-flex justify-content-center border-bottom" bg="light" expand="lg">
-                <Dropdown title="1xx" className="pe-1">
-                    <Dropdown.Toggle variant="secondary">1xx</Dropdown.Toggle>
-                    <Dropdown.Menu>
-                        <NavDropdown.Item as={Router.NavLink} to="/status/100">
+                <Dropdown className="">
+                    <Dropdown.Toggle className="text-dark no-shadow" variant="light">
+                        1xx
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu className="text-center" style={{ minWidth: "63px" }}>
+                        <Dropdown.Header>
+                            <Icon.InfoCircle color="blue" />
+                        </Dropdown.Header>
+                        <Dropdown.Item as={Router.NavLink} to="/status/100">
                             100
-                        </NavDropdown.Item>
-                        <NavDropdown.Item as={Router.NavLink} to="/status/101">
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Router.NavLink} to="/status/101">
                             101
-                        </NavDropdown.Item>
-                        <NavDropdown.Item as={Router.NavLink} to="/status/102">
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Router.NavLink} to="/status/102">
                             102
-                        </NavDropdown.Item>
-                        <NavDropdown.Item as={Router.NavLink} to="/status/103">
+                        </Dropdown.Item>
+                        <Dropdown.Item as={Router.NavLink} to="/status/103">
                             103
-                        </NavDropdown.Item>
+                        </Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-                <Dropdown className="pe-1">
-                    <Dropdown.Toggle variant="secondary">2xx</Dropdown.Toggle>
-                    <Dropdown.Menu>
+                <Dropdown className="">
+                    <Dropdown.Toggle className="text-dark no-shadow" variant="light">
+                        2xx
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu className="text-center" style={{ minWidth: "63px" }}>
+                        <Dropdown.Header>
+                            <Icon.Check2Circle color="green" />
+                        </Dropdown.Header>
                         <Dropdown.Item as={Router.NavLink} to="/status/200">
                             200
                         </Dropdown.Item>
@@ -61,9 +71,14 @@ class NavBar extends React.Component {
                         </Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-                <Dropdown className="pe-1">
-                    <Dropdown.Toggle variant="secondary">3xx</Dropdown.Toggle>
-                    <Dropdown.Menu>
+                <Dropdown className="">
+                    <Dropdown.Toggle className="text-dark no-shadow" variant="light">
+                        3xx
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu className="text-center" style={{ minWidth: "63px" }}>
+                        <Dropdown.Header>
+                            <Icon.QuestionCircle color="purple" />
+                        </Dropdown.Header>
                         <Dropdown.Item as={Router.NavLink} to="/status/300">
                             300
                         </Dropdown.Item>
@@ -93,9 +108,14 @@ class NavBar extends React.Component {
                         </Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-                <Dropdown className="pe-1">
-                    <Dropdown.Toggle variant="secondary">4xx</Dropdown.Toggle>
-                    <Dropdown.Menu>
+                <Dropdown className="">
+                    <Dropdown.Toggle className="text-dark no-shadow" variant="light">
+                        4xx
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu className="text-center" style={{ minWidth: "63px" }}>
+                        <Dropdown.Header>
+                            <Icon.XCircle color="orange" />
+                        </Dropdown.Header>
                         <Dropdown.Item as={Router.NavLink} to="/status/400">
                             400
                         </Dropdown.Item>
@@ -186,8 +206,13 @@ class NavBar extends React.Component {
                     </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>
-                    <Dropdown.Toggle variant="secondary">5xx</Dropdown.Toggle>
-                    <Dropdown.Menu>
+                    <Dropdown.Toggle className="text-dark no-shadow" variant="light">
+                        5xx
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu className="text-center" style={{ minWidth: "63px" }}>
+                        <Dropdown.Header>
+                            <Icon.XCircle color="red" />
+                        </Dropdown.Header>
                         <Dropdown.Item as={Router.NavLink} to="/status/500">
                             500
                         </Dropdown.Item>

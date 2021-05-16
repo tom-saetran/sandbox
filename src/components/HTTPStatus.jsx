@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container"
 import ListGroup from "react-bootstrap/ListGroup"
 import ListGroupItem from "react-bootstrap/ListGroupItem"
 import codes from "../json/codes.json"
+import { Check2Circle, InfoCircle, QuestionCircle, XCircle } from "react-bootstrap-icons"
 
 class HTTPStatus extends React.Component {
     state = {
@@ -27,6 +28,14 @@ class HTTPStatus extends React.Component {
             })
     }
 
+    icon = {
+        info: <InfoCircle color="blue" />,
+        success: <Check2Circle color="green" />,
+        redirect: <QuestionCircle color="purple" />,
+        clientError: <XCircle color="orange" />,
+        serverError: <XCircle color="red" />
+    }
+
     render() {
         return (
             <Container fluid>
@@ -36,8 +45,14 @@ class HTTPStatus extends React.Component {
                     <Row className="pt-5 text-center justify-content-center">
                         <Col sm={10}>
                             <Card className="">
-                                <Card.Header onContextMenu={e => e.preventDefault()}>
-                                    <h1 className="">{codes[this.state.code].number + " - " + codes[this.state.code].name}</h1>
+                                <Card.Header>
+                                    <h1 className="">
+                                        {this.state.code[0] === "1" && this.icon.info}
+                                        {this.state.code[0] === "2" && this.icon.success}
+                                        {this.state.code[0] === "3" && this.icon.redirect}
+                                        {this.state.code[0] === "4" && this.icon.clientError}
+                                        {this.state.code[0] === "5" && this.icon.serverError} {codes[this.state.code].number} - {codes[this.state.code].name}
+                                    </h1>
                                     <h2 className="">{codes[this.state.code].type}</h2>
                                 </Card.Header>
 
