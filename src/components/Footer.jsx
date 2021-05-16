@@ -50,29 +50,31 @@ class Footer extends React.Component {
                         <Router.Link to="/faq" className="footer-link">
                             FAQ
                         </Router.Link>
+                        <Router.Link to="/jobs" className="footer-link">
+                            Jobs
+                        </Router.Link>
                         <Router.Link to="/about" className="footer-link">
                             About Us
-                        </Router.Link>
-                        <Router.Link to="/privacy" className="footer-link">
-                            Privacy Policy
                         </Router.Link>
                         <Router.Link to="/tos" className="footer-link">
                             Term of Service
                         </Router.Link>
                     </Col>
                     <Col xs={{ span: 6 }} sm={{ span: 5 }} md={{ span: 2 }} className="mt-3 mt-md-0 d-flex flex-column">
-                        <h6>mediumword</h6>
-                        <Router.Link to="/" className="footer-link">
-                            Teeeext 1
+                        <Router.Link to="/policy" className="footer-link">
+                            <h6>Policies</h6>
                         </Router.Link>
-                        <Router.Link to="/" className="footer-link">
-                            Teeext 2
+                        <Router.Link to="/policy/privacy" className="footer-link">
+                            Privacy Policy
                         </Router.Link>
-                        <Router.Link to="/" className="footer-link">
-                            Teext 3
+                        <Router.Link to="/policy/shipping" className="footer-link">
+                            Shipping Policy
                         </Router.Link>
-                        <Router.Link to="/" className="footer-link">
-                            Text 4
+                        <Router.Link to="/policy/return" className="footer-link">
+                            Return Policy
+                        </Router.Link>
+                        <Router.Link to="/policy/order" className="footer-link">
+                            Order Policy
                         </Router.Link>
                     </Col>
                 </Row>
