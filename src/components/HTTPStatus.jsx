@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container"
 import ListGroup from "react-bootstrap/ListGroup"
 import ListGroupItem from "react-bootstrap/ListGroupItem"
 import codes from "../json/codes.json"
-import { Check2Circle, InfoCircle, QuestionCircle, XCircle } from "react-bootstrap-icons"
+import { CheckCircle, InfoCircle, QuestionCircle, XCircle } from "react-bootstrap-icons"
 
 class HTTPStatus extends React.Component {
     state = {
@@ -29,11 +29,11 @@ class HTTPStatus extends React.Component {
     }
 
     icon = {
-        info: <InfoCircle color="blue" />,
-        success: <Check2Circle color="green" />,
-        redirect: <QuestionCircle color="purple" />,
-        clientError: <XCircle color="orange" />,
-        serverError: <XCircle color="red" />
+        info: <InfoCircle className="mb-2" size={32} color="blue" />,
+        success: <CheckCircle className="mb-2" size={32} color="green" />,
+        redirect: <QuestionCircle className="mb-2" size={32} color="purple" />,
+        clientError: <XCircle className="mb-2" size={32} color="orange" />,
+        serverError: <XCircle className="mb-2" size={32} color="red" />
     }
 
     render() {

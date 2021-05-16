@@ -22,3 +22,24 @@ html {
 .btn:focus {
     box-shadow: none !important;
 }
+
+.bg-dim:active,
+.bg-dim-active,
+.bg-dim-active:active,
+.bg-dim-active:hover {
+    background-color: dimgray !important;
+    color: white;
+}
+
+.bg-dim {
+    background-color: white;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #212529;
+}
+
+.footer-link:active {
+    color: dimgray;
+}

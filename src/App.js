@@ -86,8 +86,8 @@ class App extends React.Component {
                         <Route render={() => <User />} exact path="/user/:id" />
                         <Route render={() => <HTTPStatus />} exact path="/status/:code" />
                         <Redirect from="/status" to="/status/200" />
-                        <Route render={() => <HTTPStatus code={501} />} exact path="/feed" />
-                        <Route render={() => <HTTPStatus code={404} />} />
+                        <Redirect exact from="/products" to="/status/501" />
+                        <Redirect from="*" to="/status/404" />
                     </Switch>
                 </Container>
                 <Route render={() => <Footer />} />

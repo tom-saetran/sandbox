@@ -3,7 +3,6 @@ import * as Router from "react-router-dom"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Container from "react-bootstrap/Container"
-import "./Footer.css"
 
 class Footer extends React.Component {
     render() {
@@ -11,64 +10,70 @@ class Footer extends React.Component {
             <Container fluid className="bg-light border-top">
                 <Row className="">
                     <Col xs={{ span: 6 }} sm={{ span: 5, offset: 2 }} md={{ span: 2, offset: 2 }} className="d-flex flex-column">
-                        <h6>Sandbox</h6>
-                        <Router.NavLink to="/" className="footer-link">
-                            Text 1
-                        </Router.NavLink>
-                        <Router.NavLink to="/" className="footer-link">
-                            Teext 2
-                        </Router.NavLink>
-                        <Router.NavLink to="/" className="footer-link">
-                            Teeext 3
-                        </Router.NavLink>
-                        <Router.NavLink to="/" className="footer-link">
-                            Teeeext 4
-                        </Router.NavLink>
+                        <Router.Link to="/" className="footer-link">
+                            <h6>Sandbox</h6>
+                        </Router.Link>
+                        <Router.Link to="/tutorial" className="footer-link">
+                            Tutorial
+                        </Router.Link>
+                        <Router.Link to="/latest" className="footer-link">
+                            Latest News
+                        </Router.Link>
+                        <Router.Link to="/signup" className="footer-link">
+                            Sign Up
+                        </Router.Link>
+                        <Router.Link to="/login" className="footer-link">
+                            Log In
+                        </Router.Link>
                     </Col>
                     <Col xs={{ span: 6 }} sm={{ span: 5 }} md={{ span: 2 }} className="d-flex flex-column">
-                        <h6>Products</h6>
-                        <Router.NavLink to="/" className="footer-link">
-                            Teeeext 1
-                        </Router.NavLink>
-                        <Router.NavLink to="/" className="footer-link">
-                            Teeext 2
-                        </Router.NavLink>
-                        <Router.NavLink to="/" className="footer-link">
-                            Teext 3
-                        </Router.NavLink>
-                        <Router.NavLink to="/" className="footer-link">
-                            Text 4
-                        </Router.NavLink>
+                        <Router.Link to="/products" className="footer-link">
+                            <h6>Products</h6>
+                        </Router.Link>
+                        <Router.Link to="/products/catalogue" className="footer-link">
+                            Catalogue
+                        </Router.Link>
+                        <Router.Link to="/products/corporate" className="footer-link">
+                            Corporate
+                        </Router.Link>
+                        <Router.Link to="/products/wholesale" className="footer-link">
+                            Wholesale
+                        </Router.Link>
+                        <Router.Link to="/products/b2b" className="footer-link">
+                            B2B
+                        </Router.Link>
                     </Col>
                     <Col xs={{ span: 6 }} sm={{ span: 5, offset: 2 }} md={{ span: 2, offset: 0 }} className="mt-3 mt-md-0 d-flex flex-column">
-                        <h6>mediumword</h6>
-                        <Router.NavLink to="/" className="footer-link">
-                            Text 1
-                        </Router.NavLink>
-                        <Router.NavLink to="/" className="footer-link">
-                            Teext 2
-                        </Router.NavLink>
-                        <Router.NavLink to="/" className="footer-link">
-                            Teeext 3
-                        </Router.NavLink>
-                        <Router.NavLink to="/" className="footer-link">
-                            Teeeext 4
-                        </Router.NavLink>
+                        <Router.Link to="/about" className="footer-link">
+                            <h6>Company</h6>
+                        </Router.Link>
+                        <Router.Link to="/faq" className="footer-link">
+                            FAQ
+                        </Router.Link>
+                        <Router.Link to="/about" className="footer-link">
+                            About Us
+                        </Router.Link>
+                        <Router.Link to="/privacy" className="footer-link">
+                            Privacy Policy
+                        </Router.Link>
+                        <Router.Link to="/tos" className="footer-link">
+                            Term of Service
+                        </Router.Link>
                     </Col>
                     <Col xs={{ span: 6 }} sm={{ span: 5 }} md={{ span: 2 }} className="mt-3 mt-md-0 d-flex flex-column">
                         <h6>mediumword</h6>
-                        <Router.NavLink to="/" className="footer-link">
+                        <Router.Link to="/" className="footer-link">
                             Teeeext 1
-                        </Router.NavLink>
-                        <Router.NavLink to="/" className="footer-link">
+                        </Router.Link>
+                        <Router.Link to="/" className="footer-link">
                             Teeext 2
-                        </Router.NavLink>
-                        <Router.NavLink to="/" className="footer-link">
+                        </Router.Link>
+                        <Router.Link to="/" className="footer-link">
                             Teext 3
-                        </Router.NavLink>
-                        <Router.NavLink to="/" className="footer-link">
+                        </Router.Link>
+                        <Router.Link to="/" className="footer-link">
                             Text 4
-                        </Router.NavLink>
+                        </Router.Link>
                     </Col>
                 </Row>
             </Container>
