@@ -7,74 +7,74 @@ import Container from "react-bootstrap/Container"
 class Footer extends React.Component {
     render() {
         return (
-            <Container fluid className="bg-light border-top">
-                <Row className="">
-                    <Col xs={{ span: 6 }} sm={{ span: 5, offset: 2 }} md={{ span: 2, offset: 2 }} className="d-flex flex-column">
-                        <Router.Link to="/" className="footer-link">
+            <Container fluid className="bg-light border-top pb-5">
+                <Row className="text-center">
+                    <Col xs={{ span: 6 }} md={{ span: 2, offset: 2 }} className="d-flex flex-column">
+                        <Router.Link to="/" className="footer-link py-3">
                             <h6>Sandbox</h6>
                         </Router.Link>
-                        <Router.Link to="/tutorial" className="footer-link">
-                            Tutorial
-                        </Router.Link>
                         <Router.Link to="/latest" className="footer-link">
-                            Latest News
+                            <p>Latest News</p>
+                        </Router.Link>
+                        <Router.Link to="/tutorial" className="footer-link">
+                            <p>Tutorial</p>
                         </Router.Link>
                         <Router.Link to="/signup" className="footer-link">
-                            Sign Up
+                            <p>Sign Up</p>
                         </Router.Link>
                         <Router.Link to="/login" className="footer-link">
-                            Log In
+                            <p>Log In</p>
                         </Router.Link>
                     </Col>
-                    <Col xs={{ span: 6 }} sm={{ span: 5 }} md={{ span: 2 }} className="d-flex flex-column">
-                        <Router.Link to="/products" className="footer-link">
+                    <Col xs={{ span: 6 }} md={{ span: 2 }} className="d-flex flex-column">
+                        <Router.Link to="/products" className="footer-link py-3">
                             <h6>Products</h6>
                         </Router.Link>
                         <Router.Link to="/products/catalogue" className="footer-link">
-                            Catalogue
+                            <p>Catalogue</p>
                         </Router.Link>
                         <Router.Link to="/products/corporate" className="footer-link">
-                            Corporate
+                            <p>Corporate</p>
                         </Router.Link>
                         <Router.Link to="/products/wholesale" className="footer-link">
-                            Wholesale
+                            <p>Wholesale</p>
                         </Router.Link>
                         <Router.Link to="/products/b2b" className="footer-link">
-                            B2B
+                            <p>B2B</p>
                         </Router.Link>
                     </Col>
-                    <Col xs={{ span: 6 }} sm={{ span: 5, offset: 2 }} md={{ span: 2, offset: 0 }} className="mt-3 mt-md-0 d-flex flex-column">
-                        <Router.Link to="/about" className="footer-link">
+                    <Col xs={{ span: 6 }} md={{ span: 2, offset: 0 }} className="mt-3 mt-md-0 d-flex flex-column">
+                        <Router.Link to="/about" className="footer-link py-3">
                             <h6>Company</h6>
                         </Router.Link>
-                        <Router.Link to="/faq" className="footer-link">
-                            FAQ
-                        </Router.Link>
-                        <Router.Link to="/jobs" className="footer-link">
-                            Jobs
+                        <Router.Link to="/tos" className="footer-link">
+                            <p>Term of Service</p>
                         </Router.Link>
                         <Router.Link to="/about" className="footer-link">
-                            About Us
+                            <p>About Us</p>
                         </Router.Link>
-                        <Router.Link to="/tos" className="footer-link">
-                            Term of Service
+                        <Router.Link to="/jobs" className="footer-link">
+                            <p>Jobs</p>
+                        </Router.Link>
+                        <Router.Link to="/faq" className="footer-link">
+                            <p>FAQ</p>
                         </Router.Link>
                     </Col>
-                    <Col xs={{ span: 6 }} sm={{ span: 5 }} md={{ span: 2 }} className="mt-3 mt-md-0 d-flex flex-column">
-                        <Router.Link to="/policy" className="footer-link">
+                    <Col xs={{ span: 6 }} md={{ span: 2 }} className="mt-3 mt-md-0 d-flex flex-column">
+                        <Router.Link to="/policy" className="footer-link py-3">
                             <h6>Policies</h6>
                         </Router.Link>
                         <Router.Link to="/policy/privacy" className="footer-link">
-                            Privacy Policy
+                            <p>Privacy Policy</p>
                         </Router.Link>
                         <Router.Link to="/policy/shipping" className="footer-link">
-                            Shipping Policy
+                            <p>Shipping Policy</p>
                         </Router.Link>
                         <Router.Link to="/policy/return" className="footer-link">
-                            Return Policy
+                            <p>Return Policy</p>
                         </Router.Link>
                         <Router.Link to="/policy/order" className="footer-link">
-                            Order Policy
+                            <p>Order Policy</p>
                         </Router.Link>
                     </Col>
                 </Row>
